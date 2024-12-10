@@ -5,7 +5,7 @@ import sys
 
 def display_welcome():
     """Display the welcome message with a spinning animation during the loading time."""
-    print("Welcome to VCFify! - written by Sheikyon (sheikyon@sheikyon.me). Available in: https://github.com/Sheikyon/VCFify")
+    print("Welcome to VCFify v1.0! - written by Sheikyon (sheikyon@sheikyon.me). Available in: https://github.com/Sheikyon/VCFify")
     spin_chars = ['|', '/', '-', '\\']
 
     # Show the spinning animation for 2 seconds
@@ -79,7 +79,7 @@ def main():
     display_welcome()
 
     while True:
-        phone = input("Please enter a phone number (with 'x' for placeholders): ")
+        phone = input("Please enter a phone number, with 'x' for placeholders (e.g. +1 (234) 567-xxxx):")
 
         if not validate_phone_number(phone):
             print("The data you entered is invalid. Please re-enter it.")
